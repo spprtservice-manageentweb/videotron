@@ -100,3 +100,19 @@ header {
   display: none;
   text-align: center;
 }
+<style>
+  #form-success {
+    display: none;
+    color: green;
+    margin-top: 1em;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  #form-success.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
